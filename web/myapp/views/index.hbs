@@ -1,0 +1,140 @@
+<div class="wrapper">
+    <div class="content">
+        <div class="container" style="margin-top:80px">
+            <div class="row">
+                <div class="col-md-7 col-sm-12 col-xs-12">
+                    <div class="info">
+                        <h3 class="name">Hi, I'm Mr.Thirumoorthi</h3>
+                        <p>ENTREPRENEUR</p>
+                        <div class="description">
+                            <p>
+                                <!-- describe yourself here -->
+                                I am basically from Tamilnadu, My fashion is developing Apps and Websites and I spend my
+                                time traveling the world.
+                                <br>
+                                My hobbies are listening music, watching movies and playing carrom. My strength is Learn
+                                from mistake, work under pressure.
+                            </p>
+                        </div>
+                        <div class="contact">
+                            <a class="button" href="/projects">
+                                <span>Explore More</span>
+                            </a>
+                        </div>
+                        <ul class="social">
+                            <li>
+                                <!-- your twitter profile url -->
+                                <a href="https://twitter.com/" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <!-- your facebook profile url -->
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <!-- your linkedin profile url -->
+                                <a href="https://www.linkedin.com/" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <!-- your linkedin mail id -->
+                                <a href="mailto:thirumoorthi1vp@gmail.com" target="_blank">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-12 col-xs-12">
+                    <div class="mypic">
+                        <img class="rounded-circle img-responsive" src="images/pic1.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="newsletter">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Subscribe to my Newsletter</h3>
+            </div>
+            <div class="col-md-6">
+                <form class="form-inline" action="/contact" method="POST">
+                    <div class="form-group mx-sm-3 mb-2" style="width: 70%;">
+                        <label for="Email" class="sr-only">Email</label>
+                        <input type="email" type="email" name="email" id="email" class="form-control" placeholder="Email address"
+                           value="{{email}}"  value="" style="width: 100%;">
+                    </div>
+                    <button type="submit" class="button mb-2">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+<!-- recent project section start -->
+<div class="row sub-heading">
+    <div class="col-md-8">
+        <h3 class="title">Recent Project</h3>
+    </div>
+    <div class="col-md-4 text-right">
+        <a href="/projects" class="button-gredient">View All</a>
+    </div>
+</div>
+
+<div class="row">
+    {{#each projects}}
+            <div class="col-md-4">				
+				<div class="grid">                    
+					<figure class="effect-julia">
+						<img src="{{image}}" class="img-responsive" alt="{{title}}">
+						<figcaption>
+							<h2>{{title}}</h2>
+							<div>
+								<p>{{description}}</p>
+							</div>
+							<a href="{{link}}" class="btn btn-primary">View Details</a>
+						</figcaption>			
+					</figure>
+				</div>
+			</div>
+        {{/each}}
+</div>
+
+<!-- recent project section end -->
+<!-- recent Post section start -->
+<div class="row sub-heading">
+    <div class="col-md-8">
+        <h3 class="title">Recent Post</h3>
+    </div>
+    <div class="col-md-4 text-right">
+        <a href="/blog" class="button-gredient">View All</a>
+    </div>
+</div>
+<div class="row">
+    {{#each post}}
+            <div class="col-md-4">				
+				<div class="grid">                    
+					<figure class="effect-julia">
+						<img src="{{image}}" class="img-responsive" alt="{{title}}">
+						<figcaption>
+							<h2>{{title}}</h2>
+							<div>
+								<p>{{content}}</p>
+							</div>
+							<a href="{{link}}" class="btn btn-primary">View Details</a>
+						</figcaption>			
+					</figure>
+				</div>
+			</div>
+        {{/each}}
+</div>
+</div>
+<!-- recent Post section end -->
+</div>

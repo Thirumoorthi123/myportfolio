@@ -1,0 +1,93 @@
+<div class="container" style="margin-top:100px">
+    <div class="row">
+        <!--sidebar-->        
+        <div class="col-md-3">
+            <div class="sidebar">
+            <div class="my-pic">
+                <img src="images/pic1.png" class="img-fluid side-pic">
+            </div>
+            <br>
+            <hr>
+            <h3 class="title" style="font-size: 20px;">Link</h3>
+            <div class="side-links">
+                <ul>
+                    <li><a href="https://github.com/Thirumoorthi123" target="_blank">Github</a></li>
+                    <li><a href="https://www.linkedin.com/" target="_blank">Linkedin</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank">facebook</a></li>
+                    <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+                </ul>
+            </div>            
+            <hr>           
+            <h3 class="title" style="font-size: 20px;">About this project</h3>
+            <div class="side-links">
+                <ul>
+                    <li>Express Js</li>
+                    <li>Node Js</li>
+                    <li>HBS</li>
+                    <li>MongoDB</li>
+                    <li>Bootstrap 4</li>
+                    <li>CSS</li>
+                    <li>HTML</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        
+
+        <div class="col-md-9">           
+                        <h1 class="title">Contact Us</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item bc-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item" aria-current="page">Contact</li>
+                </ol>
+            </nav>
+            
+                
+                <form action="/contact" method="POST">
+                                       
+                    {{#if errors}}
+                        {{#each messages}}
+                        <div class="alert alert-danger" role="alert">
+                            {{this}}
+                        </div>
+                        {{/each}}
+                    {{/if}}
+                    {{#if success}}
+                        <div class="alert alert-success" role="alert">
+                            Thank you for contacting us. We will get back at the earliest.
+                        </div>
+                    {{/if}}
+                    <div class="form-label-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Name" autofocus
+                            required value="{{name}}">
+                    </div>
+
+                    <div class="form-label-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Email address"
+                           value="{{email}}" >
+                    </div>
+
+                    <div class="form-label-group">
+                        <label for="mobile">Mobile</label>
+                        <input type="number" name="mobile" id="mobile" class="form-control" placeholder="Mobile"
+                            value="{{mobile}}">
+                    </div>
+
+                    <div class="form-label-group">
+                        <br>
+                        <textarea name="description" id="description" rows="5" class="form-control"
+                            placeholder="Description">{{description}}</textarea>
+                    </div>
+
+                    <div class="form-label-group btn-gre">
+                        <br>
+                        <button class="button-gredient" type="submit">Submit</button>
+                    </div>
+                </form>
+            
+        </div>
+    </div>
+</div>

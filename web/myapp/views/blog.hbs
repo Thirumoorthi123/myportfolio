@@ -1,0 +1,30 @@
+<div class="container" style="margin-top:80px">
+    <h1 class="title">Blog</h1>
+	<nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item bc-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item" aria-current="page">Blog</li>
+                </ol>
+            </nav>
+    {{{extraHtml}}}
+    <div class="row">
+        <!-- list of blogs -->
+        <!-- Loop through the data and create the divs -->
+        {{#each post}}
+            <div class="col-md-4">				
+				<div class="grid">                    
+					<figure class="effect-julia">
+						<img src="{{image}}" class="img-responsive" alt="{{title}}">
+						<figcaption>
+							<h2>{{title}}</h2>
+							<div>
+								<p>{{description}}</p>
+							</div>
+							<a href="{{link}}" class="btn btn-primary">View Details</a>
+						</figcaption>			
+					</figure>
+				</div>
+			</div>
+        {{/each}}
+    </div>
+</div>

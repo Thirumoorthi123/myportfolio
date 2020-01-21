@@ -1,0 +1,175 @@
+//database name:portfolio
+//collection name :projects
+//collection name : post
+
+const data = [
+  {
+    title: 'Number Guessing Game',
+    description: 'In this project you will build a small number guessing game.',
+    image: '/images/number-guessing-game.png',
+    link: '/projects/0',
+    date_created: new Date(),
+    date_modified: new Date()
+  },{
+    title: 'JS Console',
+    description: 'In this project you will build a JavaScript console.',
+    image: '/images/js-console.png',
+    link: '/projects/1',
+    date_created: new Date(),
+    date_modified: new Date()
+  },{
+    title: 'Image Changer',
+    description: 'This is a very simple JavaScript project which will toggle the images on click of it.',
+    image: '/images/image-changer.png',
+    link: '/projects/2',
+    date_created: new Date(), 
+    date_modified: new Date()
+  },{
+    title: 'Silly Story Generator',
+    description: 'In this project you will generates a silly story.',
+    image: '/images/silly-story-generator.png',
+    link: '/projects/3',
+    date_created: new Date(),
+date_modified: new Date()
+  }
+  ,{
+    title: 'Image Gallery',
+    description: 'In this project you will learn how to create an image gallery just by using plain JavaScript. ',
+    image: '/images/image-gallery.png',
+    link: '/projects/3',
+    date_created: new Date(),
+date_modified: new Date()
+  },{
+    title: 'Bouncing Balls',
+    description: 'In this project we will build a bouncing balls demo, to show you how useful objects can be in JavaScript.',
+    image: '/images/bouncing-balls.png',
+    link: '/projects/3',
+    date_created: new Date(),
+date_modified: new Date()
+  },{
+    title: 'Matrix Effect',
+    description: 'In this project your will build Matrix rain animation effect using HTML5 canvas and JavaScript.',
+    image: '/images/matrix-effect.png',
+    link: '/projects/3',
+    date_created: new Date(),
+date_modified: new Date()
+  }
+  ,{
+    title: 'Top 5 Searches',
+    description: 'In this project you will build a fake search site, with a search box. ',
+    image: '/images/top-5-searches.png',
+    link: '/projects/3',
+    date_created: new Date(),
+date_modified: new Date()
+  },{
+    title: 'JavaScript REST Calculator',
+    description: 'Create a calculator application, using the web services provided.',
+    image: '/images/javascript-rest-calculator.png',
+    link: '/projects/3',
+    date_created: new Date(),
+date_modified: new Date()
+  }
+  ,{
+    title: 'JavaScript Event Key Codes',
+    'description': 'Build a small JavaScript app to get the key codes and other key information. ',
+    image: '/images/javascript-event-key-codes.png',
+    link: '/projects/3',
+    date_created: new Date(),
+date_modified: new Date()
+  },{
+    title: 'Flex Panels Image Gallery',
+    description: 'Lets learn to build an image gallery using the flex panels. ',
+    image: '/images/flex-panels-image-gallery.png',
+    link: '/projects/3',
+    date_created: new Date(),
+date_modified: new Date()
+  },{
+    title: 'JavaScript Typeahead Search',
+    description: 'Implement a sample type ahead search using the JavaScript.',
+    image: '/images/javascript-typeahead-search.png',
+    link: '/projects/3',
+    date_created: new Date(),
+date_modified: new Date()
+  }
+];
+
+
+
+
+const blogdata = [
+  {
+    title: 'Build the REST API',
+    content: 'In this project you will build a JavaScript console.',
+    image: '/images/coding.png',
+   date_created: new Date(),
+    date_modified: new Date()
+  },{
+    title: 'Build all the pages and layouts',
+    content: 'In this project you will build a small number guessing game.',
+    image: '/images/Build.png',
+   date_created: new Date(),
+date_modified: new Date()
+  },{
+    title: 'Design the database using MongoDBSilly Story Generator',
+    content: 'In this project you will generates a silly story.',
+    image: '/images/silly-story-generator.png',
+   date_created: new Date(),
+date_modified: new Date()
+  },{
+    title: 'Fetch data from MongoDB in Express',
+    content: 'This is a very simple JavaScript project which will toggle the images on click of it.',
+    image: '/images/debug.png',
+   date_created: new Date(),
+date_modified: new Date()
+  },{
+    title: 'Image Gallery',
+    content: 'In this project you will learn how to create an image gallery just by using plain JavaScript. ',
+    image: '/images/image-gallery.png',
+   date_created: new Date(),
+date_modified: new Date()
+  },{
+    title: 'Bouncing Balls',
+    description: 'In this project we will build a bouncing balls demo, to show you how useful objects can be in JavaScript.',
+    image: '/images/bouncing-balls.png',
+   date_created: new Date(),
+date_modified: new Date()
+  },{
+    title: 'Matrix Effect',
+    description: 'In this project your will build Matrix rain animation effect using HTML5 canvas and JavaScript.',
+    image: '/images/matrix-effect.png',
+   date_created: new Date(),
+date_modified: new Date()
+  }
+  ,{
+    title: 'Top 5 Searches',
+    description: 'In this project you will build a fake search site, with a search box. ',
+    image: '/images/top-5-searches.png',
+   date_created: new Date(),
+date_modified: new Date()
+  },{
+    title: 'JavaScript REST Calculator',
+    description: 'Create a calculator application, using the web services provided.',
+    image: '/images/javascript-rest-calculator.png',
+   date_created: new Date(),
+date_modified: new Date()
+  }
+  ,{
+    title: 'JavaScript Event Key Codes',
+    description: 'Build a small JavaScript app to get the key codes and other key information. ',
+    image: '/images/javascript-event-key-codes.png',
+   date_created: new Date(),
+date_modified: new Date()
+  },{
+    title: 'Flex Panels Image Gallery',
+    description: 'Lets learn to build an image gallery using the flex panels. ',
+    image: '/images/flex-panels-image-gallery.png',
+   date_created: new Date(),
+date_modified: new Date()
+  },{
+    title: 'JavaScript Typeahead Search',
+    description: 'Implement a sample type ahead search using the JavaScript.',
+    image: '/images/javascript-typeahead-search.png',
+   date_created: new Date(),
+date_modified: new Date()
+  }
+];
