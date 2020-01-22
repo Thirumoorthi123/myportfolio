@@ -65,13 +65,20 @@
                 <h3>Subscribe to my Newsletter</h3>
             </div>
             <div class="col-md-6">
-                <form class="form-inline" action="/contact" method="POST">
-                    <div class="form-group mx-sm-3 mb-2" style="width: 70%;">
+                <form class="form-inline" action="/subscribe" method="POST">
+                    {{!-- <div class="form-group mx-sm-3 mb-2" style="width: 70%;">
                         <label for="Email" class="sr-only">Email</label>
                         <input type="email" type="email" name="email" id="email" class="form-control" placeholder="Email address"
                            value="{{email}}"  value="" style="width: 100%;">
                     </div>
-                    <button type="submit" class="button mb-2">Subscribe</button>
+                    <button type="submit" class="button mb-2">Subscribe</button> --}}
+                  <input type="email" name="email">
+                  <button>Subscribe</button>  
+                  {{#if success}}
+                    <div class="alert alert-sucess" role="alert">
+                        Thank you!..Your Email is Subscribed.
+                     {{/if}}   
+                    </div>
                 </form>
             </div>
         </div>
